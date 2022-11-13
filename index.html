@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Duy Nguyễn Site Home !</title>
+</head>
+<header>
+  <div class="home_content">
+    <i class='bx bx-info-circle'></i>
+    <h2>Hallo anh emm nhaaaa !!</h2>
+    <div class="hi_text">Tui <strong>Duy Nguyễn Đẹp Trai</strong> eyyy :></div>
+    <i class='bx bx-laugh'> ehe :3</i>
+<p>Như Mọi Người Thấy Đây Là <strong>Web Site Riêng</strong>  Mà <strong>Tui Tự Code Lên !!!</strong></p>
+<p>Ở Phần Bảng Trắng Này Tui Sẽ Chỉ Cre Chút Ít Thuii~</p>
+<p>Còn Điểm Nhấn Của Site Này Là Phần SideBar Bên Trái Nà</p>
+<p>Site Này Là Tui Đi Học Code Của Từng Người Rồi Tự Phát Triển Nó Lại Với Nhau Nha ehe:3</p>
+<p>Làm Kì Công Lắm Á @@</p>
+<p>Vậy Nên Anh Em Có Thể Nhấn Vô Phần SideBar Và Click Tới Yt Cho Tui Xin 1 Sub Nàooo :D</p>
+<p>Để Cre Có Lẽ Tới Đây Thôi Tại Lười Waa :></p>
+<p>Về Cái Phần<strong> About Me Và Giả Lụp</strong> Thì Tui Quyết Định Sẽ Làm Thêm<strong> 1 2 Site Nữa Cho Phần Đó</strong> Nên Đây Mới Chỉ Là<strong> Demo Hoi</strong> :></p>
+<p>Tiện Nếu Rảnh Thì Tui Sẽ Học Và Add Thêm 1 Số Chức Năng Lỏ Vô Cho Ae Nghịch =)</p>
+  </div>
+</header>
+<body>
+  <div class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <i class='bx bxl-c-plus-plus'></i>
+      <div class="logo_name">DuyNguyễn Developer</div>
+      </div>
+      <i class='bx bx-menu' id="btn"></i>
+  </div>
+  <ul class="nav_list">
+  <li>
+    <i class='bx bx-search' ></i>
+  <input type="text" placeholder="Muốn Tìm Thứ Gì Hửmm :>">
+  <span class="tooltip">Search</span>
+</li>
+<li>
+  <a href="#" id="a4">
+  <i class='bx bxs-home'></i>
+  <span class="links_name">Home</span>
+  </a>
+  <span class="tooltip">Duy Nguyễn Site Homee!</span>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/channel/UCDtIiH9v5l4CJiVk4dZl-Gw" id="a1">
+      <i class='bx bxl-youtube'></i>
+      <span class="links_name">YouTube</span>
+    </a>
+    <span class="tooltip">My YouTube Channel :3</span>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/DuyCuliCuti" id="a2">
+        <i class='bx bxl-facebook-circle'></i>
+        <span class="links_name">FaceBook</span>
+      </a>
+      <span class="tooltip">My FaceBook Profile :3</span>
+      </li>
+      <li>
+        <a href="#" id="a5">
+          <i class='bx bxs-extension'></i>
+          <span class="links_name">Giả Lụp Litee :D</span>
+        </a>
+        <span class="tooltip">Giả Lụp Lite Cho Máy Íu</span>
+        </li>
+      <li>
+        <a href="#" id="a3">
+          <i class='bx bxs-user-circle'></i>
+          <span class="links_name">About Duy Nguyễn :></span>
+        </a>
+        <span class="tooltip">About Mee :D</span>
+        </li>
+        <li class="profile_org"></li>
+        <div class="profile_details"></div>
+        <div class="name_job">
+          <img class="s_img" src="https://preview.redd.it/omy0nb0y5oa71.jpg?auto=webp&s=30ca1cf947f72494f49f962488cf6c0c4377b4d7" title="DuyNguyen0819">
+            <span class="name">Nguyễn Nhật Tân Duy</span>
+        <br/>
+          <span class="job">Who Designer This Site!</span>
+          </div>
+          </li>
+      </div>
+      <div class="profile_content"></div>
+  <li class="profile">
+    <div class="profile-details">
+      <img class="profile_img" src="https://i.pinimg.com/originals/7b/58/3b/7b583b7e6cbbb596ed651909cd3fd6c8.jpg" title="Logo Of Web Site Designer :3"></img>
+<div class="img_text">@DuyCuliCuti :3</div>
+    </ul>  
+  <script>
+btn.onclick = function() {
+  sidebar.classList.toggle("active");
+}
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
+</html>
